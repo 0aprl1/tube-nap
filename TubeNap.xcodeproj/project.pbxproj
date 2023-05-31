@@ -1,0 +1,536 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C40529732324DB2B00574946 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40529722324DB2B00574946 /* DataController.swift */; };
+		C43DB26F234166120070FD35 /* libAudioPreprocessing.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C43DB26E234166120070FD35 /* libAudioPreprocessing.dylib */; };
+		C43DB2702341661B0070FD35 /* libAudioPreprocessing.dylib in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C43DB26E234166120070FD35 /* libAudioPreprocessing.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		C448592723245FA300CA9E97 /* OptionJourneyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C448592623245FA300CA9E97 /* OptionJourneyCell.swift */; };
+		C453A0CF232798B000B94840 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C453A0CD232798B000B94840 /* DataModel.xcdatamodeld */; };
+		C453A0D7232953C300B94840 /* CustomPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = C453A0D6232953C300B94840 /* CustomPin.swift */; };
+		C453A0DA2329564300B94840 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C453A0D92329564300B94840 /* MapKit.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		C453A0DD232975C400B94840 /* TravelOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = C453A0DC232975C400B94840 /* TravelOption.swift */; };
+		C45E6067232EA590000F3FA5 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45E6066232EA590000F3FA5 /* Trip.swift */; };
+		C4622594231EBF72000C9B53 /* PlanJourney.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4622593231EBF72000C9B53 /* PlanJourney.swift */; };
+		C4622596231EBF92000C9B53 /* TflStops.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4622595231EBF92000C9B53 /* TflStops.swift */; };
+		C4622598231EBFFD000C9B53 /* TubeStops.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4622597231EBFFD000C9B53 /* TubeStops.swift */; };
+		C462259A231EC032000C9B53 /* AllTubeLines.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4622599231EC032000C9B53 /* AllTubeLines.swift */; };
+		C462259C231EC062000C9B53 /* TflRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C462259B231EC062000C9B53 /* TflRequests.swift */; };
+		C46225A0231F9792000C9B53 /* TravelPlanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = C462259F231F9792000C9B53 /* TravelPlanner.swift */; };
+		C46225A2231FA143000C9B53 /* TravelPlans.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46225A1231FA143000C9B53 /* TravelPlans.swift */; };
+		C46225A4232017EE000C9B53 /* SettingsFavourites.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46225A3232017EE000C9B53 /* SettingsFavourites.swift */; };
+		C46225A6232017F6000C9B53 /* ViewNetworkMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46225A5232017F6000C9B53 /* ViewNetworkMap.swift */; };
+		C46225A823201809000C9B53 /* CurrentJourney.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46225A723201809000C9B53 /* CurrentJourney.swift */; };
+		C46225B42321258F000C9B53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46225B32321258F000C9B53 /* AppDelegate.swift */; };
+		C47A3D5C231943B3006B56AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C47A3D5B231943B3006B56AB /* Assets.xcassets */; };
+		C480E26F233BB2C00075B9F2 /* tubeClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C480E26E233BB2C00075B9F2 /* tubeClassifier.mlmodel */; };
+		C492FC62232FEC3700455D4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C492FC61232FEC3700455D4A /* LaunchScreen.storyboard */; };
+		C492FC66232FF47700455D4A /* AudioHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C492FC65232FF47700455D4A /* AudioHandler.swift */; };
+		C4E87E3B23269A4900767057 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4E87E3A23269A4900767057 /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C453A13B232BE08D00B94840 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C43DB2702341661B0070FD35 /* libAudioPreprocessing.dylib in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C40529722324DB2B00574946 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		C43DB26E234166120070FD35 /* libAudioPreprocessing.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libAudioPreprocessing.dylib; path = ../libAudioPreprocessing.dylib; sourceTree = "<group>"; };
+		C448592623245FA300CA9E97 /* OptionJourneyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionJourneyCell.swift; sourceTree = "<group>"; };
+		C453A0CE232798B000B94840 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		C453A0D6232953C300B94840 /* CustomPin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPin.swift; sourceTree = "<group>"; };
+		C453A0D92329564300B94840 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		C453A0DB2329565B00B94840 /* NapTube.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NapTube.entitlements; sourceTree = "<group>"; };
+		C453A0DC232975C400B94840 /* TravelOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelOption.swift; sourceTree = "<group>"; };
+		C45E6066232EA590000F3FA5 /* Trip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
+		C4622593231EBF72000C9B53 /* PlanJourney.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanJourney.swift; sourceTree = "<group>"; };
+		C4622595231EBF92000C9B53 /* TflStops.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TflStops.swift; sourceTree = "<group>"; };
+		C4622597231EBFFD000C9B53 /* TubeStops.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TubeStops.swift; sourceTree = "<group>"; };
+		C4622599231EC032000C9B53 /* AllTubeLines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllTubeLines.swift; sourceTree = "<group>"; };
+		C462259B231EC062000C9B53 /* TflRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TflRequests.swift; sourceTree = "<group>"; };
+		C462259F231F9792000C9B53 /* TravelPlanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelPlanner.swift; sourceTree = "<group>"; };
+		C46225A1231FA143000C9B53 /* TravelPlans.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelPlans.swift; sourceTree = "<group>"; };
+		C46225A3232017EE000C9B53 /* SettingsFavourites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsFavourites.swift; sourceTree = "<group>"; };
+		C46225A5232017F6000C9B53 /* ViewNetworkMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNetworkMap.swift; sourceTree = "<group>"; };
+		C46225A723201809000C9B53 /* CurrentJourney.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentJourney.swift; sourceTree = "<group>"; };
+		C46225B32321258F000C9B53 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C47A3D51231943B1006B56AB /* TubeNap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TubeNap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C47A3D5B231943B3006B56AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C47A3D60231943B3006B56AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C480E26E233BB2C00075B9F2 /* tubeClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = tubeClassifier.mlmodel; sourceTree = "<group>"; };
+		C492FC61232FEC3700455D4A /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C492FC65232FF47700455D4A /* AudioHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioHandler.swift; sourceTree = "<group>"; };
+		C4E87E3A23269A4900767057 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C47A3D4E231943B1006B56AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C43DB26F234166120070FD35 /* libAudioPreprocessing.dylib in Frameworks */,
+				C453A0DA2329564300B94840 /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C4370E1A233CE9DC004CA793 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C453A0D5232925FE00B94840 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				C4622599231EC032000C9B53 /* AllTubeLines.swift */,
+				C4622597231EBFFD000C9B53 /* TubeStops.swift */,
+				C462259F231F9792000C9B53 /* TravelPlanner.swift */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		C453A0D82329564300B94840 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C43DB26E234166120070FD35 /* libAudioPreprocessing.dylib */,
+				C453A0D92329564300B94840 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C45E6074232EF0FD000F3FA5 /* MLModel */ = {
+			isa = PBXGroup;
+			children = (
+				C480E26E233BB2C00075B9F2 /* tubeClassifier.mlmodel */,
+			);
+			path = MLModel;
+			sourceTree = "<group>";
+		};
+		C47A3D48231943B1006B56AB = {
+			isa = PBXGroup;
+			children = (
+				C47A3D53231943B1006B56AB /* TubeNap */,
+				C47A3D5B231943B3006B56AB /* Assets.xcassets */,
+				C45E6074232EF0FD000F3FA5 /* MLModel */,
+				C453A0D82329564300B94840 /* Frameworks */,
+				C47A3D52231943B1006B56AB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C47A3D52231943B1006B56AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C47A3D51231943B1006B56AB /* TubeNap.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C47A3D53231943B1006B56AB /* TubeNap */ = {
+			isa = PBXGroup;
+			children = (
+				C453A0DB2329565B00B94840 /* NapTube.entitlements */,
+				C46225B32321258F000C9B53 /* AppDelegate.swift */,
+				C47A3D60231943B3006B56AB /* Info.plist */,
+				C47A3D662319459B006B56AB /* Model */,
+				C47A3D672319459F006B56AB /* View */,
+				C47A3D68231945A4006B56AB /* Controller */,
+			);
+			path = TubeNap;
+			sourceTree = "<group>";
+		};
+		C47A3D662319459B006B56AB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C47A3D6A231945C9006B56AB /* Data */,
+				C47A3D69231945C0006B56AB /* Requests */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C47A3D672319459F006B56AB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C448592623245FA300CA9E97 /* OptionJourneyCell.swift */,
+				C453A0D6232953C300B94840 /* CustomPin.swift */,
+				C4E87E3A23269A4900767057 /* Main.storyboard */,
+				C492FC61232FEC3700455D4A /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C47A3D68231945A4006B56AB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C4370E1A233CE9DC004CA793 /* Extensions */,
+				C4622593231EBF72000C9B53 /* PlanJourney.swift */,
+				C4622595231EBF92000C9B53 /* TflStops.swift */,
+				C46225A1231FA143000C9B53 /* TravelPlans.swift */,
+				C46225A3232017EE000C9B53 /* SettingsFavourites.swift */,
+				C46225A5232017F6000C9B53 /* ViewNetworkMap.swift */,
+				C46225A723201809000C9B53 /* CurrentJourney.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C47A3D69231945C0006B56AB /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				C453A0D5232925FE00B94840 /* JSON */,
+				C462259B231EC062000C9B53 /* TflRequests.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		C47A3D6A231945C9006B56AB /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				C453A0CD232798B000B94840 /* DataModel.xcdatamodeld */,
+				C40529722324DB2B00574946 /* DataController.swift */,
+				C45E6066232EA590000F3FA5 /* Trip.swift */,
+				C453A0DC232975C400B94840 /* TravelOption.swift */,
+				C492FC65232FF47700455D4A /* AudioHandler.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C47A3D50231943B1006B56AB /* NapTube */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C47A3D63231943B3006B56AB /* Build configuration list for PBXNativeTarget "NapTube" */;
+			buildPhases = (
+				C47A3D4D231943B1006B56AB /* Sources */,
+				C47A3D4E231943B1006B56AB /* Frameworks */,
+				C47A3D4F231943B1006B56AB /* Resources */,
+				C453A13B232BE08D00B94840 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NapTube;
+			productName = NapTube;
+			productReference = C47A3D51231943B1006B56AB /* TubeNap.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C47A3D49231943B1006B56AB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = PelpoLabs;
+				TargetAttributes = {
+					C47A3D50231943B1006B56AB = {
+						CreatedOnToolsVersion = 10.3;
+						SystemCapabilities = {
+							com.apple.AccessWiFi = {
+								enabled = 0;
+							};
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = C47A3D4C231943B1006B56AB /* Build configuration list for PBXProject "TubeNap" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C47A3D48231943B1006B56AB;
+			productRefGroup = C47A3D52231943B1006B56AB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C47A3D50231943B1006B56AB /* NapTube */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C47A3D4F231943B1006B56AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C492FC62232FEC3700455D4A /* LaunchScreen.storyboard in Resources */,
+				C4E87E3B23269A4900767057 /* Main.storyboard in Resources */,
+				C47A3D5C231943B3006B56AB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C47A3D4D231943B1006B56AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4622596231EBF92000C9B53 /* TflStops.swift in Sources */,
+				C462259C231EC062000C9B53 /* TflRequests.swift in Sources */,
+				C46225A4232017EE000C9B53 /* SettingsFavourites.swift in Sources */,
+				C46225A0231F9792000C9B53 /* TravelPlanner.swift in Sources */,
+				C45E6067232EA590000F3FA5 /* Trip.swift in Sources */,
+				C453A0D7232953C300B94840 /* CustomPin.swift in Sources */,
+				C462259A231EC032000C9B53 /* AllTubeLines.swift in Sources */,
+				C480E26F233BB2C00075B9F2 /* tubeClassifier.mlmodel in Sources */,
+				C40529732324DB2B00574946 /* DataController.swift in Sources */,
+				C492FC66232FF47700455D4A /* AudioHandler.swift in Sources */,
+				C448592723245FA300CA9E97 /* OptionJourneyCell.swift in Sources */,
+				C4622594231EBF72000C9B53 /* PlanJourney.swift in Sources */,
+				C46225A2231FA143000C9B53 /* TravelPlans.swift in Sources */,
+				C46225B42321258F000C9B53 /* AppDelegate.swift in Sources */,
+				C453A0DD232975C400B94840 /* TravelOption.swift in Sources */,
+				C4622598231EBFFD000C9B53 /* TubeStops.swift in Sources */,
+				C453A0CF232798B000B94840 /* DataModel.xcdatamodeld in Sources */,
+				C46225A823201809000C9B53 /* CurrentJourney.swift in Sources */,
+				C46225A6232017F6000C9B53 /* ViewNetworkMap.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C47A3D61231943B3006B56AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_MAP_FILE_PATH = "";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C47A3D62231943B3006B56AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_MAP_FILE_PATH = "";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C47A3D64231943B3006B56AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B66G68Z4AU;
+				INFOPLIST_FILE = "$(SRCROOT)/TubeNap/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)",
+					"$(USER_LIBRARY_DIR)/Mobile\\ Documents/com~apple~CloudDocs/Studi\\ e\\ Ricerca/Università/Birkbeck/Final\\ project/TubeNap\\ Project/versions/For\\ Mac",
+					"$(USER_LIBRARY_DIR)/Mobile\\ Documents/com~apple~CloudDocs/Studi\\ e\\ Ricerca/Università/Birkbeck/Final\\ project/TubeNap\\ Project/versions/For\\ Mac",
+					"$(USER_LIBRARY_DIR)/Mobile\\ Documents/com~apple~CloudDocs/Studi\\ e\\ Ricerca/Università/Birkbeck/Final\\ project/TubeNap\\ Project/versions",
+					"$(USER_LIBRARY_DIR)/Mobile\\ Documents/com~apple~CloudDocs/Studi\\ e\\ Ricerca/Università/Birkbeck/Final\\ project/TubeNap\\ Project/versions",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = PL;
+				PRODUCT_NAME = TubeNap;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		C47A3D65231943B3006B56AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B66G68Z4AU;
+				INFOPLIST_FILE = "$(SRCROOT)/TubeNap/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)",
+					"$(USER_LIBRARY_DIR)/Mobile\\ Documents/com~apple~CloudDocs/Studi\\ e\\ Ricerca/Università/Birkbeck/Final\\ project/TubeNap\\ Project/versions/For\\ Mac",
+					"$(USER_LIBRARY_DIR)/Mobile\\ Documents/com~apple~CloudDocs/Studi\\ e\\ Ricerca/Università/Birkbeck/Final\\ project/TubeNap\\ Project/versions/For\\ Mac",
+					"$(USER_LIBRARY_DIR)/Mobile\\ Documents/com~apple~CloudDocs/Studi\\ e\\ Ricerca/Università/Birkbeck/Final\\ project/TubeNap\\ Project/versions",
+					"$(USER_LIBRARY_DIR)/Mobile\\ Documents/com~apple~CloudDocs/Studi\\ e\\ Ricerca/Università/Birkbeck/Final\\ project/TubeNap\\ Project/versions",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = PL;
+				PRODUCT_NAME = TubeNap;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C47A3D4C231943B1006B56AB /* Build configuration list for PBXProject "TubeNap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C47A3D61231943B3006B56AB /* Debug */,
+				C47A3D62231943B3006B56AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C47A3D63231943B3006B56AB /* Build configuration list for PBXNativeTarget "NapTube" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C47A3D64231943B3006B56AB /* Debug */,
+				C47A3D65231943B3006B56AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C453A0CD232798B000B94840 /* DataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C453A0CE232798B000B94840 /* DataModel.xcdatamodel */,
+			);
+			currentVersion = C453A0CE232798B000B94840 /* DataModel.xcdatamodel */;
+			path = DataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C47A3D49231943B1006B56AB /* Project object */;
+}
